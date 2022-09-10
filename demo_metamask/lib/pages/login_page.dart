@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
           _session = session;
         });
       } catch (exp) {
-        print(exp);
+        print('Exception la: $exp');
       }
     }
   }
@@ -160,6 +160,22 @@ class _LoginPageState extends State<LoginPage> {
                     child: const Text("Connect with Metamask"),
                   ),
             const Text("Testtt"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Click me'),
+                ),
+                const SizedBox(
+                  width: 20,
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Follow me'),
+                ),
+              ],
+            ),
           ],
         ),
       ),
